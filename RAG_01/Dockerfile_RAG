@@ -1,0 +1,36 @@
+# RAG(Bedrock, Kendra)
+
+ARG python_image_v="python:3.10-buster"
+FROM ${python_image_v}
+
+ARG work_dir="/work/"
+# コンテナにアクセスした際のデフォルトディレクトリ
+WORKDIR ${work_dir}
+
+# pip更新
+RUN pip install --upgrade pip langchain
+
+# boto3インストール
+RUN pip install boto3
+
+# リージョン情報を設定する
+ENV AWS_DEFAULT_REGION=us-east-1
+
+# Bedrockに必要なモジュールをインストール
+RUN pip install --no-build-isolation --force-reinstall \
+    "boto3>=1.28.57" \
+    "awscli>=1.29.57" \
+    "botocore>=1.31.57" \
+    "langchain==0.0.320"
+
+
+
+# コマンド
+## Dockerイメージを作る
+## $ docker build -f Dockerfile_RAG -t rag_img .
+
+## Dokckerコンテナを作成し起動する
+## $ docker run --rm --name rag_env -v $PWD/work/:/work/ -dit rag_img
+
+## Dockerコンテナに入る
+## $ docker exec -it rag_env bash
