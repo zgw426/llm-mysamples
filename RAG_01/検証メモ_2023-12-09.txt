@@ -199,6 +199,9 @@ root@d36c793ddd0b:/work#
 query = '第2章'  # クエリ
 prompt = f"Human:『${documents}』の2章の内容に合致するファイル名が 桃太郎物語_第 からはじまるファイルのファイル名を教えて\nAssistant:"
 //----------------------------------------------//
+→実行結果
+　『桃太郎物語_第2章.txt』と回答得た（期待した挙動）
+
 
 root@d36c793ddd0b:/work# python rag-NotUseLangchein.py 
 2023-12-09 04:47:24.996780: query = 第2章
