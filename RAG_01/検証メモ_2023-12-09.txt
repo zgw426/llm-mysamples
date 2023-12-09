@@ -1,0 +1,585 @@
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------//
+query = '第1章'  # クエリ
+prompt = f"Human:『${documents}』の桃太郎物語_目次とあらすじ.txtファイルの1章の箇所は何行目から何行目ですか？\nAssistant:"
+//----------------------------------------------//
+→実行結果
+　『桃太郎物語_目次とあらすじ.txtファイルの1章の箇所は1行目から6行目までです。』と回答得た（期待した挙動）
+
+
+root@d36c793ddd0b:/work# python rag-NotUseLangchein.py 
+2023-12-09 04:39:11.985624: query = 第1章
+2023-12-09 04:39:11.985679: --- Kendra Start---
+2023-12-09 04:39:12.225072: --- Kendra End---
+------
+        Id | 263de9c6-0b27-4e11-b7f2-083a8f49770e-0916c3db-e193-45e8-8948-5f9bc1bb8f0a
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第1章.txt
+        DocumentTitle | 桃太郎物語_第1章.txt
+        Content | 彼らはその子に桃太郎と名付け、愛情を込めて育て上げました。 桃太郎は日に日に成長し、村の人々からは頼りにされる存在となっていきました。 桃太郎の明るい笑顔と優れた力は、村の中で話題となりました。 やがて、村を脅かす凶暴な鬼が現れ、村人たちは困り果てました。 そこで、村人たちは桃太郎に助けを求めることにしました。 彼は村の期待に応えるべく、仲間を得るために旅に出ることを決意し、物語は新たな展開を迎えるのでした。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC1%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC1%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第1章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 263de9c6-0b27-4e11-b7f2-083a8f49770e-59ff70bb-e3fb-40dd-b59d-e6aa438bf767
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第1章.txt
+        DocumentTitle | 桃太郎物語_第1章.txt
+        Content | 二人は大きなナイフで桃を切り開くと、そこには見事な桃の中から元気いっぱいの赤ん坊が現れました。 赤ん坊には誰もいなかったので、おじいさんとおばあさんはその子を自分たちの子供として迎え入れました。 彼らはその子に 桃太郎と名付け、愛情を込めて育て上げました。 桃太郎は日に日に成長し、村の人々からは頼りにされる存在となっていきました。 桃太郎の明るい笑顔と優れた力は、村の中で話題となりました。 彼らはその子に桃太郎と名付け、愛情を込めて育て上げました。 桃太郎は日に日に成長し、村の人々からは頼りにされる存在となっていきました。 桃太郎の明るい笑顔と優れた力は、村の中で話題となりました。 やがて、村を脅かす凶暴な鬼が現れ、村人たちは困り果てました。 そこで、村人たちは桃 太郎に助けを求めることにしました。 彼は村の期待に応えるべく、仲間を得るために旅に出ることを決意し、物語は新たな展開を迎えるのでした。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC1%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC1%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第1章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 263de9c6-0b27-4e11-b7f2-083a8f49770e-34f13f26-acd9-4d78-b83d-0ae94eaebe20
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_目次とあらすじ.txt
+        DocumentTitle | 桃太郎物語_目次とあらすじ.txt
+        Content | 第1章: 桃太郎の誕生 ある日、老夫婦が子供に恵まれずに悩んでいた。 海から大きな桃が流れ着き、老夫婦がその桃を割ると中から小さな赤ん坊が現れた。 赤ん坊は桃太郎と名付けられ、夫婦の子供として育てられた。 第2章: 桃 太郎の成長 桃太郎は成長し、力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 第2章: 桃太郎の成長 桃太郎は成長し、 力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 村人たちは桃太郎に助けを求め、彼は鬼退治のために立ち上がることを決意した。 第4章: 仲間たちの集結 桃太郎は旅に出る前に、仲間を募るために動物たちに声をかける。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_目次とあらすじ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 263de9c6-0b27-4e11-b7f2-083a8f49770e-ea6d4058-c324-4f50-afbd-3b4cc609c747
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第1章.txt
+        DocumentTitle | 桃太郎物語_第1章.txt
+        Content | ある昔々の日本の村に、子供が恵まれずにいたおじいさんとおばあさんが住んでいました。 彼らは日夜、子どもの笑顔を夢見ていましたが、その夢は叶わず、寂しい日々が続いていました。 ある日、村の川から大きな桃が流れ着き ました。 その桃は見るからに特別で、おじいさんとおばあさんは驚きながらも喜び、「これが私たちの子供なのかもしれない」と思いました。 二人は大きなナイフで桃を切り開くと、そこには見事な桃の中から元気いっぱいの赤ん坊が現れました。 赤ん坊には誰もいなかったので、おじいさんとおばあさんはその子を自分たちの子供として迎え入れました。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC1%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC1%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第1章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 263de9c6-0b27-4e11-b7f2-083a8f49770e-2ec83324-b505-4bcd-a65e-243df7a8cc45
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第1章.txt
+        DocumentTitle | 桃太郎物語_第1章.txt
+        Content | ある昔々の日本の村に、子供が恵まれずにいたおじいさんとおばあさんが住んでいました。 彼らは日夜、子どもの笑顔を夢見ていましたが、その夢は叶わず、寂しい日々が続いていました。 ある日、村の川から大きな桃が流れ着き ました。 その桃は見るからに特別で、おじいさんとおばあさんは驚きながらも喜び、「これが私たちの子供なのかもしれない」と思いました。 二人は大きなナイフで桃を切り開くと、そこには見事な桃の中から元気いっぱいの赤ん坊が現れました。 赤ん坊には誰もいなかったので、おじいさんとおばあさんはその子を自分たちの子供として迎え入れました。 彼らはその子に桃太郎と名付け、愛情を込めて育て上げました。 桃太郎は日に日に成長し、村の人々からは頼りにされる存在となっていきまし た。 桃太郎の明るい笑顔と優れた力は、村の中で話題となりました。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC1%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC1%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第1章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 263de9c6-0b27-4e11-b7f2-083a8f49770e-ea3a3323-c888-4b1f-85b5-ec67c7fa5d49
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第1章.txt
+        DocumentTitle | 桃太郎物語_第1章.txt
+        Content | ある日、村の川から大きな桃が流れ着きました。 その桃は見るからに特別で、おじいさんとおばあさんは驚きながらも喜び、「これが私たちの子供なのかもしれない」と思いました。 二人は大きなナイフで桃を切り開くと、そこに は見事な桃の中から元気いっぱいの赤ん坊が現れました。 赤ん坊には誰もいなかったので、おじいさんとおばあさんはその子を自分たちの子供として迎え入れました。 彼らはその子に桃太郎と名付け、愛情を込めて育て上げました。 桃太郎は日に日に成長し、村の人々からは頼りにされる存在となっていきました。 桃太郎の明るい笑顔と優れた力は、村の中で話題となりました。 彼らはその子に桃太郎と名付け、愛情を込めて育て上げました。 桃太郎は日に日に成長し、村の人々からは頼りにされる存在となっていきました。 桃太郎の明るい笑顔と優れた力は、村の中で話題となりました。 やがて、村を脅かす凶暴な鬼が現れ、村人たちは困り果てました。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC1%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC1%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第1章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 263de9c6-0b27-4e11-b7f2-083a8f49770e-3a8b9e32-b909-44b3-866c-d29342f89f07
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_目次とあらすじ.txt
+        DocumentTitle | 桃太郎物語_目次とあらすじ.txt
+        Content | 第1章: 桃太郎の誕生 ある日、老夫婦が子供に恵まれずに悩んでいた。 海から大きな桃が流れ着き、老夫婦がその桃を割ると中から小さな赤ん坊が現れた。 赤ん坊は桃太郎と名付けられ、夫婦の子供として育てられた。 第2章: 桃 太郎の成長 桃太郎は成長し、力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 第2章: 桃太郎の成長 桃太郎は成長し、 力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 村人たちは桃太郎に助けを求め、彼は鬼退治のために立ち上がることを決意した。 第4章: 仲間たちの集結 桃太郎は旅に出る前に、仲間を募るために動物たちに声をかける。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼退治に向かう。 第5章: 鬼との戦い 仲間たちと共に、桃太郎は鬼のいる島に到着する。 激 しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_目次とあらすじ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 263de9c6-0b27-4e11-b7f2-083a8f49770e-d0ddf362-b540-4ea0-b92d-da97343fccf9
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_目次とあらすじ.txt
+        DocumentTitle | 桃太郎物語_目次とあらすじ.txt
+        Content | 村人たちは桃太郎に助けを求め、彼は鬼退治のために立ち上がることを決意した。 第4章: 仲間たちの集結 桃太郎は旅に出る前に、仲間を募るために動物たちに声をかける。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼 退治に向かう。 第5章: 鬼との戦い 仲間たちと共に、桃太郎は鬼のいる島に到着する。 激しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼退治に向かう。 第5章: 鬼との戦い 仲間たちと共に、桃太郎は鬼のいる島に到着する。 激しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。 第6章: 勝利と帰還 鬼を打ち破った桃太郎と仲間たちは、村に凱旋する。 村人たちは喜びに包まれ、桃太郎は村の英雄と して讃えられる。 桃太郎の話は地域によって異なる要素を含むことがありますが、これは一般的なパターンに基づいています。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_目次とあらすじ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 263de9c6-0b27-4e11-b7f2-083a8f49770e-bf75e2de-5ce5-4a05-9d3c-1d42a251bc9d
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_目次とあらすじ.txt
+        DocumentTitle | 桃太郎物語_目次とあらすじ.txt
+        Content | 第2章: 桃太郎の成長 桃太郎は成長し、力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 村人たちは桃太郎に助けを求め、彼は鬼退治のために立ち上がることを決意した。 第4章: 仲間たちの集結 桃太郎は旅に出る前に、仲間を募るために動物たちに声をかける。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼退治に向かう。 第5章: 鬼との 戦い 仲間たちと共に、桃太郎は鬼のいる島に到着する。 激しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼退治に向かう。 第5章: 鬼との戦い 仲間たちと共に、桃太郎は 鬼のいる島に到着する。 激しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。 第6章: 勝利と帰還 鬼を打ち破った桃太郎と仲間たちは、村に凱旋する。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_目次とあらすじ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 263de9c6-0b27-4e11-b7f2-083a8f49770e-8d91c4e8-0467-4c57-bb87-31ee6a73b0d3
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第2章.txt
+        DocumentTitle | 桃太郎物語_第2章.txt
+        Content | 彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は 以前よりも平和で幸福な場所となりました。 しかし、彼の冒険はこれで終わりではありません。 村を襲う凶悪な鬼の脅威が迫っており、桃太郎は新たな使命に向けて旅立つことになります。 彼の成長と覚悟は、物語を次なる興奮へと導いていくでしょう。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第2章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+2023-12-09 04:39:12.226881: --- Bedrock Start---
+2023-12-09 04:39:21.711922: --- Bedrock End---
+2023-12-09 04:39:21.712027: Bedrock Result : {'completion': ' 『$彼らはその子に桃太郎と名付け、愛情を込めて育て上げました。 桃太郎は日に日に成長し、村の人々からは頼りにされる存在となっていきました。 桃太郎の明るい笑顔と優れた力は、村の中で話題となりました。 やがて、村を脅かす凶暴な鬼が現れ、村人たちは困り果てました。 そこで、村人たちは桃太郎に助けを求めることにしました。 彼は村の期待に応えるべく、仲間を得るために旅に出ることを決意し、物語は新たな展開を迎えるのでした。』の1章の部分は1行目から6行目までです。\n\nしたがって、桃太郎物語_目次とあらすじ.txtファイルの1章の箇所は1行目から6行目までです。', 'stop_reason': 'stop_sequence', 'stop': '\n\nHuman'}
+
+{'completion': ' 『$彼らはその子に桃太郎と名付け、愛情を込めて育て上げました。 桃太郎は日に日に成長し、村の人々からは頼りにされる存在となっていきました。 桃太郎の明るい笑顔と優れた力は、村の中で話題となりました。 やがて、村を脅かす凶暴な鬼が現れ、村人たちは困り果てました。 そこで、村人たちは桃太郎に助けを求めることにしました。 彼は村の期待に応えるべく、仲間を得るために旅に出ることを決意し、物語は新たな展開を迎えるのでした。』の1章の部分は1行目から6行目までです。\n\nしたがって、桃太郎物語_目次とあらすじ.txtファイルの1章の箇所は1行目から6行目までです。', 'stop_reason': 'stop_sequence', 'stop': '\n\nHuman'}
+root@d36c793ddd0b:/work# 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------//
+query = '第２章'  # クエリ
+prompt = f"Human:『${documents}』の桃太郎物語_目次とあらすじ.txtファイルの２章の箇所は何行目から何行目ですか？\nAssistant:"
+//----------------------------------------------//
+→実行結果
+　『2章部分は6行目から11行目です。』と回答得た（期待した挙動）
+
+
+2023-12-09 04:40:07.352702: query = 第２章
+2023-12-09 04:40:07.352760: --- Kendra Start---
+2023-12-09 04:40:07.554162: --- Kendra End---
+------
+        Id | c678c9dc-a6bb-40c7-bf54-82a42645abb4-9d7f5d25-f4f7-42fe-ac59-f475b3507643
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第2章.txt
+        DocumentTitle | 桃太郎物語_第2章.txt
+        Content | 彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は 以前よりも平和で幸福な場所となりました。 しかし、彼の冒険はこれで終わりではありません。 村を襲う凶悪な鬼の脅威が迫っており、桃太郎は新たな使命に向けて旅立つことになります。 彼の成長と覚悟は、物語を次なる興奮へと導いていくでしょう。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第2章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | c678c9dc-a6bb-40c7-bf54-82a42645abb4-3934328b-70d2-4279-ae74-128486669c62
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_目次とあらすじ.txt
+        DocumentTitle | 桃太郎物語_目次とあらすじ.txt
+        Content | 第1章: 桃太郎の誕生 ある日、老夫婦が子供に恵まれずに悩んでいた。 海から大きな桃が流れ着き、老夫婦がその桃を割ると中から小さな赤ん坊が現れた。 赤ん坊は桃太郎と名付けられ、夫婦の子供として育てられた。 第2章: 桃 太郎の成長 桃太郎は成長し、力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 第2章: 桃太郎の成長 桃太郎は成長し、 力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 村人たちは桃太郎に助けを求め、彼は鬼退治のために立ち上がることを決意した。 第4章: 仲間たちの集結 桃太郎は旅に出る前に、仲間を募るために動物たちに声をかける。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼退治に向かう。 第5章: 鬼との戦い 仲間たちと共に、桃太郎は鬼のいる島に到着する。 激 しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_目次とあらすじ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | c678c9dc-a6bb-40c7-bf54-82a42645abb4-ba7738b4-4059-4d8c-ad66-f58e76fd070a
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_目次とあらすじ.txt
+        DocumentTitle | 桃太郎物語_目次とあらすじ.txt
+        Content | 第1章: 桃太郎の誕生 ある日、老夫婦が子供に恵まれずに悩んでいた。 海から大きな桃が流れ着き、老夫婦がその桃を割ると中から小さな赤ん坊が現れた。 赤ん坊は桃太郎と名付けられ、夫婦の子供として育てられた。 第2章: 桃 太郎の成長 桃太郎は成長し、力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 第2章: 桃太郎の成長 桃太郎は成長し、 力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 村人たちは桃太郎に助けを求め、彼は鬼退治のために立ち上がることを決意した。 第4章: 仲間たちの集結 桃太郎は旅に出る前に、仲間を募るために動物たちに声をかける。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_目次とあらすじ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | c678c9dc-a6bb-40c7-bf54-82a42645abb4-aed25f96-f727-4119-a7bf-76b1be5d89f2
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第2章.txt
+        DocumentTitle | 桃太郎物語_第2章.txt
+        Content | 彼の力強い体と優れた知恵は、村の農作業や問題解決において大いに役立ち、人々の生活を劇的に改善させました。 桃太郎は成長する中で、村の中で英雄としての評判を確立しました。 彼の透明感ある眼差しは、村の老若男女を引 き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は以前よりも平和で幸福な場所となりました。 彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は以前よりも平和で幸福な場所となりまし た。 しかし、彼の冒険はこれで終わりではありません。 村を襲う凶悪な鬼の脅威が迫っており、桃太郎は新たな使命に向けて旅立つことになります。 彼の成長と覚悟は、物語を次なる興奮へと導いていくでしょう。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第2章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | c678c9dc-a6bb-40c7-bf54-82a42645abb4-6f2fbbd9-9267-4cf1-a467-9fb79efa70b6
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第2章.txt
+        DocumentTitle | 桃太郎物語_第2章.txt
+        Content | 桃太郎は幸運にもおじいさんとおばあさんに育てられ、村の中で頭角を現しました。 その赤ん坊の頃から備わっていた異常なまでの力強さと聡明さは、成長するにつれて一層顕著になりました。 彼は穏やかで親しみやすく、村の子 供たちから慕われる存在となりました。 おじいさんとおばあさんは、桃太郎が川から流れ着いた桃の中から生まれたことを知っていたため、彼の成長には神秘的な期待が寄せられていました。 彼の力強い体と優れた知恵は、村の農作業や問題解決にお いて大いに役立ち、人々の生活を劇的に改善させました。 桃太郎は成長する中で、村の中で英雄としての評判を確立しました。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第2章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | c678c9dc-a6bb-40c7-bf54-82a42645abb4-d56b1722-dd3e-4403-8b98-9c9aa48241f7
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第2章.txt
+        DocumentTitle | 桃太郎物語_第2章.txt
+        Content | 桃太郎は幸運にもおじいさんとおばあさんに育てられ、村の中で頭角を現しました。 その赤ん坊の頃から備わっていた異常なまでの力強さと聡明さは、成長するにつれて一層顕著になりました。 彼は穏やかで親しみやすく、村の子 供たちから慕われる存在となりました。 おじいさんとおばあさんは、桃太郎が川から流れ着いた桃の中から生まれたことを知っていたため、彼の成長には神秘的な期待が寄せられていました。 彼の力強い体と優れた知恵は、村の農作業や問題解決にお いて大いに役立ち、人々の生活を劇的に改善させました。 桃太郎は成長する中で、村の中で英雄としての評判を確立しました。 彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は以前よりも平和で幸福な場所となりました。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第2章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | c678c9dc-a6bb-40c7-bf54-82a42645abb4-a48d265e-1d12-4d36-84af-dcb567cca65d
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第2章.txt
+        DocumentTitle | 桃太郎物語_第2章.txt
+        Content | 彼は穏やかで親しみやすく、村の子供たちから慕われる存在となりました。 おじいさんとおばあさんは、桃太郎が川から流れ着いた桃の中から生まれたことを知っていたため、彼の成長には神秘的な期待が寄せられていました。 彼 の力強い体と優れた知恵は、村の農作業や問題解決において大いに役立ち、人々の生活を劇的に改善させました。 桃太郎は成長する中で、村の中で英雄としての評判を確立しました。 彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険 譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は以前よりも平和で幸福な場所となりました。 彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は以前よりも平和で幸福な場所となりました。 しかし、彼の冒険はこれで終わりではありません。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第2章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | c678c9dc-a6bb-40c7-bf54-82a42645abb4-cf20d96c-1de1-4862-a085-9e5f9ae8f95c
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_目次とあらすじ.txt
+        DocumentTitle | 桃太郎物語_目次とあらすじ.txt
+        Content | 村人たちは桃太郎に助けを求め、彼は鬼退治のために立ち上がることを決意した。 第4章: 仲間たちの集結 桃太郎は旅に出る前に、仲間を募るために動物たちに声をかける。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼 退治に向かう。 第5章: 鬼との戦い 仲間たちと共に、桃太郎は鬼のいる島に到着する。 激しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼退治に向かう。 第5章: 鬼との戦い 仲間たちと共に、桃太郎は鬼のいる島に到着する。 激しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。 第6章: 勝利と帰還 鬼を打ち破った桃太郎と仲間たちは、村に凱旋する。 村人たちは喜びに包まれ、桃太郎は村の英雄と して讃えられる。 桃太郎の話は地域によって異なる要素を含むことがありますが、これは一般的なパターンに基づいています。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_目次とあらすじ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | c678c9dc-a6bb-40c7-bf54-82a42645abb4-2bbd05ab-9f39-4ada-93ed-2ccfde9186ac
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_目次とあらすじ.txt
+        DocumentTitle | 桃太郎物語_目次とあらすじ.txt
+        Content | 第2章: 桃太郎の成長 桃太郎は成長し、力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 村人たちは桃太郎に助けを求め、彼は鬼退治のために立ち上がることを決意した。 第4章: 仲間たちの集結 桃太郎は旅に出る前に、仲間を募るために動物たちに声をかける。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼退治に向かう。 第5章: 鬼との 戦い 仲間たちと共に、桃太郎は鬼のいる島に到着する。 激しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼退治に向かう。 第5章: 鬼との戦い 仲間たちと共に、桃太郎は 鬼のいる島に到着する。 激しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。 第6章: 勝利と帰還 鬼を打ち破った桃太郎と仲間たちは、村に凱旋する。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_目次とあらすじ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | c678c9dc-a6bb-40c7-bf54-82a42645abb4-5072bf95-7a8e-4c1a-a400-a3e6b88645b2
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第4章.txt
+        DocumentTitle | 桃太郎物語_第4章.txt
+        Content | 最後に加わったのは、美しい羽を持つキジだった。 桃太郎が彼女に出会った時、キジは空を舞い、その美しさで桃太郎を引き込んだ。 彼女もまた仲間に加わり、桃太郎の冒険に彩りを添えることとなった。 仲間たちはそれぞれ異なる特技や個性を持ち、桃太郎の力強さを補完する存在となった。 彼らの結束と協力が、鬼との戦いにおいて不可欠な要素となり、物語はますます興奮を増していく。 桃太郎と仲間たちの集結が、村を脅かす鬼の前に立ちはだかる壮大な冒険の始まりを 告げていた。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC4%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC4%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第4章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+2023-12-09 04:40:07.568473: --- Bedrock Start---
+2023-12-09 04:40:13.955061: --- Bedrock End---
+2023-12-09 04:40:13.955226: Bedrock Result : {'completion': ' 『$彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していまし た。 村の人々は桃太郎の存在に心から安心し、村は以前よりも平和で幸福な場所となりました。 しかし、彼の冒険はこれで終わりではありません。 村を襲う凶悪な鬼の脅威が迫っており、桃太郎は新たな使命に向けて旅立つことになります。 彼の成 長と覚悟は、物語を次なる興奮へと導いていくでしょう。』の2章部分は6行目から11行目です。', 'stop_reason': 'stop_sequence', 'stop': '\n\nHuman'}
+
+{'completion': ' 『$彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村 は以前よりも平和で幸福な場所となりました。 しかし、彼の冒険はこれで終わりではありません。 村を襲う凶悪な鬼の脅威が迫っており、桃太郎は新たな使命に向けて旅立つことになります。 彼の成長と覚悟は、物語を次なる興奮へと導いていくでしょう。』の2章部分は6行目から11行目です。', 'stop_reason': 'stop_sequence', 'stop': '\n\nHuman'}
+root@d36c793ddd0b:/work# 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------//
+query = '第2章'  # クエリ
+prompt = f"Human:『${documents}』の2章の内容に合致するファイル名が 桃太郎物語_第 からはじまるファイルのファイル名を教えて\nAssistant:"
+//----------------------------------------------//
+
+root@d36c793ddd0b:/work# python rag-NotUseLangchein.py 
+2023-12-09 04:47:24.996780: query = 第2章
+2023-12-09 04:47:24.996833: --- Kendra Start---
+2023-12-09 04:47:25.188642: --- Kendra End---
+------
+        Id | 5568fa91-f6b7-4190-b1fe-b09adbbddd76-972da627-41fe-4fcc-96dc-d5b4800a73f5
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第2章.txt
+        DocumentTitle | 桃太郎物語_第2章.txt
+        Content | 彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は 以前よりも平和で幸福な場所となりました。 しかし、彼の冒険はこれで終わりではありません。 村を襲う凶悪な鬼の脅威が迫っており、桃太郎は新たな使命に向けて旅立つことになります。 彼の成長と覚悟は、物語を次なる興奮へと導いていくでしょう。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第2章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 5568fa91-f6b7-4190-b1fe-b09adbbddd76-db598426-a67d-41fb-bb92-e129cc03c38d
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_目次とあらすじ.txt
+        DocumentTitle | 桃太郎物語_目次とあらすじ.txt
+        Content | 第1章: 桃太郎の誕生 ある日、老夫婦が子供に恵まれずに悩んでいた。 海から大きな桃が流れ着き、老夫婦がその桃を割ると中から小さな赤ん坊が現れた。 赤ん坊は桃太郎と名付けられ、夫婦の子供として育てられた。 第2章: 桃 太郎の成長 桃太郎は成長し、力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 第2章: 桃太郎の成長 桃太郎は成長し、 力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 村人たちは桃太郎に助けを求め、彼は鬼退治のために立ち上がることを決意した。 第4章: 仲間たちの集結 桃太郎は旅に出る前に、仲間を募るために動物たちに声をかける。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼退治に向かう。 第5章: 鬼との戦い 仲間たちと共に、桃太郎は鬼のいる島に到着する。 激 しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_目次とあらすじ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 5568fa91-f6b7-4190-b1fe-b09adbbddd76-cbb0ac80-0f17-467d-b535-132f3c7c8951
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_目次とあらすじ.txt
+        DocumentTitle | 桃太郎物語_目次とあらすじ.txt
+        Content | 第1章: 桃太郎の誕生 ある日、老夫婦が子供に恵まれずに悩んでいた。 海から大きな桃が流れ着き、老夫婦がその桃を割ると中から小さな赤ん坊が現れた。 赤ん坊は桃太郎と名付けられ、夫婦の子供として育てられた。 第2章: 桃 太郎の成長 桃太郎は成長し、力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 第2章: 桃太郎の成長 桃太郎は成長し、 力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 村人たちは桃太郎に助けを求め、彼は鬼退治のために立ち上がることを決意した。 第4章: 仲間たちの集結 桃太郎は旅に出る前に、仲間を募るために動物たちに声をかける。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_目次とあらすじ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 5568fa91-f6b7-4190-b1fe-b09adbbddd76-2ae2c8cd-3788-4e97-adb1-f829438d33b1
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第2章.txt
+        DocumentTitle | 桃太郎物語_第2章.txt
+        Content | 彼の力強い体と優れた知恵は、村の農作業や問題解決において大いに役立ち、人々の生活を劇的に改善させました。 桃太郎は成長する中で、村の中で英雄としての評判を確立しました。 彼の透明感ある眼差しは、村の老若男女を引 き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は以前よりも平和で幸福な場所となりました。 彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は以前よりも平和で幸福な場所となりまし た。 しかし、彼の冒険はこれで終わりではありません。 村を襲う凶悪な鬼の脅威が迫っており、桃太郎は新たな使命に向けて旅立つことになります。 彼の成長と覚悟は、物語を次なる興奮へと導いていくでしょう。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第2章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 5568fa91-f6b7-4190-b1fe-b09adbbddd76-49c21cd3-a2be-40fc-9e75-b25b3f91d4dd
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第2章.txt
+        DocumentTitle | 桃太郎物語_第2章.txt
+        Content | 桃太郎は幸運にもおじいさんとおばあさんに育てられ、村の中で頭角を現しました。 その赤ん坊の頃から備わっていた異常なまでの力強さと聡明さは、成長するにつれて一層顕著になりました。 彼は穏やかで親しみやすく、村の子 供たちから慕われる存在となりました。 おじいさんとおばあさんは、桃太郎が川から流れ着いた桃の中から生まれたことを知っていたため、彼の成長には神秘的な期待が寄せられていました。 彼の力強い体と優れた知恵は、村の農作業や問題解決にお いて大いに役立ち、人々の生活を劇的に改善させました。 桃太郎は成長する中で、村の中で英雄としての評判を確立しました。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第2章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 5568fa91-f6b7-4190-b1fe-b09adbbddd76-af6bd9e8-d97a-427f-b923-15bad1cb646a
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第2章.txt
+        DocumentTitle | 桃太郎物語_第2章.txt
+        Content | 桃太郎は幸運にもおじいさんとおばあさんに育てられ、村の中で頭角を現しました。 その赤ん坊の頃から備わっていた異常なまでの力強さと聡明さは、成長するにつれて一層顕著になりました。 彼は穏やかで親しみやすく、村の子 供たちから慕われる存在となりました。 おじいさんとおばあさんは、桃太郎が川から流れ着いた桃の中から生まれたことを知っていたため、彼の成長には神秘的な期待が寄せられていました。 彼の力強い体と優れた知恵は、村の農作業や問題解決にお いて大いに役立ち、人々の生活を劇的に改善させました。 桃太郎は成長する中で、村の中で英雄としての評判を確立しました。 彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は以前よりも平和で幸福な場所となりました。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第2章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 5568fa91-f6b7-4190-b1fe-b09adbbddd76-fa744acc-0342-40f6-b665-6392956105f5
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第2章.txt
+        DocumentTitle | 桃太郎物語_第2章.txt
+        Content | 彼は穏やかで親しみやすく、村の子供たちから慕われる存在となりました。 おじいさんとおばあさんは、桃太郎が川から流れ着いた桃の中から生まれたことを知っていたため、彼の成長には神秘的な期待が寄せられていました。 彼 の力強い体と優れた知恵は、村の農作業や問題解決において大いに役立ち、人々の生活を劇的に改善させました。 桃太郎は成長する中で、村の中で英雄としての評判を確立しました。 彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険 譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は以前よりも平和で幸福な場所となりました。 彼の透明感ある眼差しは、村の老若男女を引き付け、彼の話や冒険譚は口伝えで語り継がれました。 彼は義務感やプライドに満ち、村人たちに対して深い感謝の意を示していました。 村の人々は桃太郎の存在に心から安心し、村は以前よりも平和で幸福な場所となりました。 しかし、彼の冒険はこれで終わりではありません。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC2%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第2章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 5568fa91-f6b7-4190-b1fe-b09adbbddd76-0c4fd863-bf3d-4ba9-a2f9-23fd76bd7f2b
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_目次とあらすじ.txt
+        DocumentTitle | 桃太郎物語_目次とあらすじ.txt
+        Content | 村人たちは桃太郎に助けを求め、彼は鬼退治のために立ち上がることを決意した。 第4章: 仲間たちの集結 桃太郎は旅に出る前に、仲間を募るために動物たちに声をかける。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼 退治に向かう。 第5章: 鬼との戦い 仲間たちと共に、桃太郎は鬼のいる島に到着する。 激しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼退治に向かう。 第5章: 鬼との戦い 仲間たちと共に、桃太郎は鬼のいる島に到着する。 激しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。 第6章: 勝利と帰還 鬼を打ち破った桃太郎と仲間たちは、村に凱旋する。 村人たちは喜びに包まれ、桃太郎は村の英雄と して讃えられる。 桃太郎の話は地域によって異なる要素を含むことがありますが、これは一般的なパターンに基づいています。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_目次とあらすじ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 5568fa91-f6b7-4190-b1fe-b09adbbddd76-d4d59be2-c29b-431e-97f6-2aa1adb0e8f5
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_目次とあらすじ.txt
+        DocumentTitle | 桃太郎物語_目次とあらすじ.txt
+        Content | 第2章: 桃太郎の成長 桃太郎は成長し、力強く、頭の良い若者になった。 村の人々には桃太郎の勇気や優れた力が評判となり、彼は村の英雄となった。 第3章: 鬼の脅威 村を襲う凶悪な鬼が現れ、村人たちを苦しめた。 村人たちは桃太郎に助けを求め、彼は鬼退治のために立ち上がることを決意した。 第4章: 仲間たちの集結 桃太郎は旅に出る前に、仲間を募るために動物たちに声をかける。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼退治に向かう。 第5章: 鬼との 戦い 仲間たちと共に、桃太郎は鬼のいる島に到着する。 激しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。 イヌ、サル、キジが桃太郎の仲間となり、彼らと共に鬼退治に向かう。 第5章: 鬼との戦い 仲間たちと共に、桃太郎は 鬼のいる島に到着する。 激しい戦闘が繰り広げられ、桃太郎と仲間たちは協力して鬼を撃退する。 第6章: 勝利と帰還 鬼を打ち破った桃太郎と仲間たちは、村に凱旋する。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%9B%AE%E6%AC%A1%E3%81%A8%E3%81%82%E3%82%89%E3%81%99%E3%81%98.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_目次とあらすじ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 5568fa91-f6b7-4190-b1fe-b09adbbddd76-d7c37d80-2322-4fab-8445-c955cfbd0d40
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第4章.txt
+        DocumentTitle | 桃太郎物語_第4章.txt
+        Content | 最後に加わったのは、美しい羽を持つキジだった。 桃太郎が彼女に出会った時、キジは空を舞い、その美しさで桃太郎を引き込んだ。 彼女もまた仲間に加わり、桃太郎の冒険に彩りを添えることとなった。 仲間たちはそれぞれ異なる特技や個性を持ち、桃太郎の力強さを補完する存在となった。 彼らの結束と協力が、鬼との戦いにおいて不可欠な要素となり、物語はますます興奮を増していく。 桃太郎と仲間たちの集結が、村を脅かす鬼の前に立ちはだかる壮大な冒険の始まりを 告げていた。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC4%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC4%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第4章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+2023-12-09 04:47:25.190464: --- Bedrock Start---
+2023-12-09 04:47:27.518862: --- Bedrock End---
+2023-12-09 04:47:27.518917: Bedrock Result : {'completion': ' 桃太郎物語_第2章.txt', 'stop_reason': 'stop_sequence', 'stop': '\n\nHuman'}
+
+{'completion': ' 桃太郎物語_第2章.txt', 'stop_reason': 'stop_sequence', 'stop': '\n\nHuman'}
+root@d36c793ddd0b:/work# 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------//
+query = 'イヌ'  # クエリ
+prompt = f"Human:『${documents}』のイヌと最初にであったことが記載されている箇所は 桃太郎物語_目次とあらすじ.txtファイル の何行目から何行目ですか？\nAssistant:"
+//----------------------------------------------//
+→NG
+
+root@d36c793ddd0b:/work# python rag-NotUseLangchein.py 
+2023-12-09 04:51:50.540135: query = イヌ
+2023-12-09 04:51:50.540191: --- Kendra Start---
+2023-12-09 04:51:50.756159: --- Kendra End---
+------
+        Id | dabaf19d-099e-4cf4-8b96-8dc04d268279-3797f2f7-15db-4314-8b94-0c1266762623
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_ステータス_イヌ.txt
+        DocumentTitle | 桃太郎物語_ステータス_イヌ.txt
+        Content | 皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場でイヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。 クエスト: 鬼の探索: 鬼の島において、敵の位置を察知し、桃太郎に情報を提供する。 バックストーリー: イヌは桃太郎の仲間として生まれ、戦士としての使命を果たすべく成長してきた。 幼いころから村の守り手として鍛えられ、桃太郎との出会いが運命を変えた。 忠誠心と戦闘力を備えたイヌは、仲間としての信頼を勝ち取り、冒険の中で数々の困難を共に乗り越えてきた。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_ステータス_イヌ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | dabaf19d-099e-4cf4-8b96-8dc04d268279-4e23d890-bfca-431e-b3e7-f4294dbdba6e
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_アイテム_鋼の爪.txt
+        DocumentTitle | 桃太郎物語_アイテム_鋼の爪.txt
+        Content | 能力値向上: 攻撃力向上: 鋼の爪の鋭い先端が相手に強力な傷を負わせる。 敏捷性向上: 軽量かつ鋭い形状が、イヌの俊敏な動きをサポート。 特殊効果: 切り裂き効果: 敵の防御を切り裂き、傷口からの出血を引き起こす。 イヌの威嚇: 鋼の爪で攻撃することで、敵に対して威嚇効果をもたらす。 属性: 無属性: 特定の属性に依存せず、あらゆる種類の敵に対して有効。 野生の属性: 自然の力を帯びた爪であり、森や野生の中での効果が増す。 レアリティ: 優れた: イヌのために特別に作られた優れた武器。 使用者への影響: イヌの戦闘本能: 鋼の爪を装備することで、イヌの戦闘本能がさらに引き出される。 バックストーリー: 村の守り手として生まれたイヌのために、鍛冶師が特別に作り上げた。 イヌの俊敏さと攻撃力を最大限に引き出すために設計された優れた爪。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0_%E9%8B%BC%E3%81%AE%E7%88%AA.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0_%E9%8B%BC%E3%81%AE%E7%88%AA.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_アイテム_鋼の爪.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | dabaf19d-099e-4cf4-8b96-8dc04d268279-e1a7375c-0dfb-4471-8c82-ed96b642ed92
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_ステータス_イヌ.txt
+        DocumentTitle | 桃太郎物語_ステータス_イヌ.txt
+        Content | 名前: イヌ クラス: 戦士 レベル: 8 経験値: 3500/8000 能力値: 力 (STR): 7/10 イヌの強力な噛みつきや力強い突進が特徴。 知恵 (INT): 5/10 戦闘においては直感力が優れ、桃太郎の指示を素早く理解する。 敏捷性 (DEX): 9/10 俊敏で機敏な動きで、敵の攻撃を素早くかわすことができる。 耐久力 (CON): 8/10 戦場での長時間の活動にも耐える丈夫な体を持つ。 魅力 (CHA): 6/10 村人たちとの交流ができ、困難な状況でも心強い存在。 武器: 鋼の爪: 強力な鋼製の爪で、素早い連続攻撃が可能。 防具:
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_ステータス_イヌ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | dabaf19d-099e-4cf4-8b96-8dc04d268279-dbebe77f-82f5-430f-b56e-ef1d3d8ef5f1
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_ステータス_イヌ.txt
+        DocumentTitle | 桃太郎物語_ステータス_イヌ.txt
+        Content | 魅力 (CHA): 6/10 村人たちとの交流ができ、困難な状況でも心強い存在。 武器: 鋼の爪: 強力な鋼製の爪で、素早い連続攻撃が可能。 防具: 皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場 でイヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。 皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場でイヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。 クエスト: 鬼の探索: 鬼の島において、敵の位置を察知し、桃太郎に情報を提供する。 バックストーリー: イヌは桃太郎の仲間として生まれ、戦士としての使命を果たすべく成長してきた。 幼いころから村の守り手として鍛えられ、桃太郎との出会いが運命を変えた。 忠誠心と戦闘力を備えたイヌは、仲間としての信頼を勝ち取り、冒険の中で数々の困難を共に乗り越えてきた。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_ステータス_イヌ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | dabaf19d-099e-4cf4-8b96-8dc04d268279-53030704-90c8-45d2-af3e-9c08ecd0e64a
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_ステータス_イヌ.txt
+        DocumentTitle | 桃太郎物語_ステータス_イヌ.txt
+        Content | イヌの強力な噛みつきや力強い突進が特徴。 知恵 (INT): 5/10 戦闘においては直感力が優れ、桃太郎の指示を素早く理解する。 敏捷性 (DEX): 9/10 俊敏で機敏な動きで、敵の攻撃を素早くかわすことができる。 耐久力 (CON): 8/10 戦場での長時間の活動にも耐える丈夫な体を持つ。 魅力 (CHA): 6/10 村人たちとの交流ができ、困難な状況でも心強い存在。 武器: 鋼の爪: 強力な鋼製の爪で、素早い連続攻撃が可能。 防具: 皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場でイヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。 皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場でイ ヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。 クエスト: 鬼の探索: 鬼の島において、敵の位置を察知し、桃太郎に情報を提供する。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_ステータス_イヌ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | dabaf19d-099e-4cf4-8b96-8dc04d268279-7e2f7e21-afbd-4910-92b1-1ef11a191aac
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_ステータス_イヌ.txt
+        DocumentTitle | 桃太郎物語_ステータス_イヌ.txt
+        Content | 名前: イヌ クラス: 戦士 レベル: 8 経験値: 3500/8000 能力値: 力 (STR): 7/10 イヌの強力な噛みつきや力強い突進が特徴。 知恵 (INT): 5/10 戦闘においては直感力が優れ、桃太郎の指示を素早く理解する。 敏捷性 (DEX): 9/10 俊敏で機敏な動きで、敵の攻撃を素早くかわすことができる。 耐久力 (CON): 8/10 戦場での長時間の活動にも耐える丈夫な体を持つ。 魅力 (CHA): 6/10 村人たちとの交流ができ、困難な状況でも心強い存在。 武器: 鋼の爪: 強力な鋼製の爪で、素早い連続攻撃が可能。 防具: 皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場でイヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_ステータス_イヌ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | dabaf19d-099e-4cf4-8b96-8dc04d268279-97abfa56-930f-48c7-bf80-aea809e16fc7
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第4章.txt
+        DocumentTitle | 桃太郎物語_第4章.txt
+        Content | 桃太郎は決意を胸に抱き、鬼との戦いに挑むために仲間を集める旅に出発した。 最初に向かったのは森の中で、そこで彼は信頼できる仲間たちを見つけることになる。 最初に出会ったのは、知恵者で忠実なイヌだった。 イヌは桃太郎の使命を知り、彼に仲間になることを申し出た。 彼は鼻っ柱を高く張り、忠誠心に満ちた瞳で桃太郎に誓いを立てた。 次に仲間に加わったのは、俊敏で器用なサルだった。 桃太郎がサルに会ったとき、彼は木の上で器用な動きを見せ、戦いにおいても役立つことを示した。 サルもまた、桃太郎の仲間になることを選び、冒険への期待が感じられた。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC4%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC4%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第4章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | dabaf19d-099e-4cf4-8b96-8dc04d268279-4fcd2d72-71d4-4536-b525-e3bd67937446
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第4章.txt
+        DocumentTitle | 桃太郎物語_第4章.txt
+        Content | 桃太郎は決意を胸に抱き、鬼との戦いに挑むために仲間を集める旅に出発した。 最初に向かったのは森の中で、そこで彼は信頼できる仲間たちを見つけることになる。 最初に出会ったのは、知恵者で忠実なイヌだった。 イヌは桃太郎の使命を知り、彼に仲間になることを申し出た。 彼は鼻っ柱を高く張り、忠誠心に満ちた瞳で桃太郎に誓いを立てた。 次に仲間に加わったのは、俊敏で器用なサルだった。 桃太郎がサルに会ったとき、彼は木の上で器用な動きを見せ、戦いにおいても役立つことを示した。 サルもまた、桃太郎の仲間になることを選び、冒険への期待が感じられた。 最後に加わったのは、美しい羽を持つキジだった。 桃太郎が彼女に出会った時、キジは空を舞い、その美しさで桃太郎を引き込んだ。 彼女もまた仲 間に加わり、桃太郎の冒険に彩りを添えることとなった。 仲間たちはそれぞれ異なる特技や個性を持ち、桃太郎の力強さを補完する存在となった。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC4%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC4%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第4章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | dabaf19d-099e-4cf4-8b96-8dc04d268279-a9e5fb08-6479-4ef3-9699-f7f6f2fdb83e
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_アイテム_鋼の爪.txt
+        DocumentTitle | 桃太郎物語_アイテム_鋼の爪.txt
+        Content | 武器名: 鋼の爪 基本特性: 素材: 強力な鋼で作られており、爪の先端が鋭く尖っている。 軽量: イヌが素早い動きをするために軽量である。 能力値向上: 攻撃力向上: 鋼の爪の鋭い先端が相手に強力な傷を負わせる。 敏捷性向上: 軽量かつ鋭い形状が、イヌの俊敏な動きをサポート。 特殊効果: 切り裂き効果: 敵の防御を切り裂き、傷口からの出血を引き起こす。 イヌの威嚇: 鋼の爪で攻撃することで、敵に対して威嚇効果をもたらす。 属性: 無属性: 特定の属性に依存せず、 あらゆる種類の敵に対して有効。 野生の属性: 自然の力を帯びた爪であり、森や野生の中での効果が増す。 レアリティ:
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0_%E9%8B%BC%E3%81%AE%E7%88%AA.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0_%E9%8B%BC%E3%81%AE%E7%88%AA.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_アイテム_鋼の爪.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | dabaf19d-099e-4cf4-8b96-8dc04d268279-45a905be-efd2-4864-b7f7-fb2079b013ea
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_アイテム_鋼の爪.txt
+        DocumentTitle | 桃太郎物語_アイテム_鋼の爪.txt
+        Content | 武器名: 鋼の爪 基本特性: 素材: 強力な鋼で作られており、爪の先端が鋭く尖っている。 軽量: イヌが素早い動きをするために軽量である。 能力値向上: 攻撃力向上: 鋼の爪の鋭い先端が相手に強力な傷を負わせる。 敏捷性向上: 軽量かつ鋭い形状が、イヌの俊敏な動きをサポート。 特殊効果: 切り裂き効果: 敵の防御を切り裂き、傷口からの出血を引き起こす。 イヌの威嚇: 鋼の爪で攻撃することで、敵に対して威嚇効果をもたらす。 属性: 無属性: 特定の属性に依存せず、 あらゆる種類の敵に対して有効。 野生の属性: 自然の力を帯びた爪であり、森や野生の中での効果が増す。 レアリティ: 優れた: イヌのために特別に作られた優れた武器。 使用者への影響: イヌの戦闘本能: 鋼の爪を装備することで、イヌの戦闘本能がさらに引き出される。 バックストーリー: 村の守り手として生まれたイヌのために、鍛冶師が特別に作り上げた。 イヌの俊敏さと攻撃力を最大限に引き出すために設計された優れた爪。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0_%E9%8B%BC%E3%81%AE%E7%88%AA.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0_%E9%8B%BC%E3%81%AE%E7%88%AA.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_アイテム_鋼の爪.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+2023-12-09 04:51:50.758448: --- Bedrock Start---
+2023-12-09 04:52:14.270640: --- Bedrock End---
+2023-12-09 04:52:14.270802: Bedrock Result : {'completion': ' 『$皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場でイヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。 クエスト: 鬼の探索: 鬼の島において、敵の位置を察知し、桃太郎に情報を提供する。 バックストーリー: イヌは桃太郎の仲間として生まれ、戦士としての使命を果たすべく成長してきた。 幼いころから村の守り手として鍛えられ、桃太郎との出会いが運命を変えた。 忠誠心と戦闘力を備えたイヌは、仲間としての信頼を', 'stop_reason': 'max_tokens', 'stop': None}
+
+{'completion': ' 『$皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場でイヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。 クエスト: 鬼の探索: 鬼の島において、敵の位置を察知し、桃太郎に情報を提供する。 バックストーリー: イヌは桃太郎の仲間として生まれ、戦士としての使命を果たすべく成長してきた。 幼いころから村の守り手として鍛えられ、桃太郎との出会いが運命を変えた。 忠誠心と戦闘力を備えたイヌは、仲間としての信頼を', 'stop_reason': 'max_tokens', 'stop': None}
+root@d36c793ddd0b:/work# 
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//----------------------------------------------//
+query = 'イヌ'  # クエリ
+prompt = f"Human:『${documents}』のイヌと最初にであったことが記載されているファイル名が 桃太郎物語_第 からはじまるファイルのファイル名を教えて\nAssistant:"
+//----------------------------------------------//
+→NG
+
+root@d36c793ddd0b:/work# python rag-NotUseLangchein.py 
+2023-12-09 05:12:26.726645: query = イヌ
+2023-12-09 05:12:26.726697: --- Kendra Start---
+2023-12-09 05:12:26.941349: --- Kendra End---
+------
+        Id | 4f2c7f88-1703-4308-ac3e-e660ab4a02a5-d4b34dd8-6dc5-444d-9699-b27d8de16659
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_ステータス_イヌ.txt
+        DocumentTitle | 桃太郎物語_ステータス_イヌ.txt
+        Content | 皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場でイヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。 クエスト: 鬼の探索: 鬼の島において、敵の位置を察知し、桃太郎に情報を提供する。 バックストーリー: イヌは桃太郎の仲間として生まれ、戦士としての使命を果たすべく成長してきた。 幼いころから村の守り手として鍛えられ、桃太郎との出会いが運命を変えた。 忠誠心と戦闘力を備えたイヌは、仲間としての信頼を勝ち取り、冒険の中で数々の困難を共に乗り越えてきた。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_ステータス_イヌ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 4f2c7f88-1703-4308-ac3e-e660ab4a02a5-08d23f91-5063-4fa1-ade2-cfc916376ca7
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_アイテム_鋼の爪.txt
+        DocumentTitle | 桃太郎物語_アイテム_鋼の爪.txt
+        Content | 能力値向上: 攻撃力向上: 鋼の爪の鋭い先端が相手に強力な傷を負わせる。 敏捷性向上: 軽量かつ鋭い形状が、イヌの俊敏な動きをサポート。 特殊効果: 切り裂き効果: 敵の防御を切り裂き、傷口からの出血を引き起こす。 イヌの威嚇: 鋼の爪で攻撃することで、敵に対して威嚇効果をもたらす。 属性: 無属性: 特定の属性に依存せず、あらゆる種類の敵に対して有効。 野生の属性: 自然の力を帯びた爪であり、森や野生の中での効果が増す。 レアリティ: 優れた: イヌのために特別に作られた優れた武器。 使用者への影響: イヌの戦闘本能: 鋼の爪を装備することで、イヌの戦闘本能がさらに引き出される。 バックストーリー: 村の守り手として生まれたイヌのために、鍛冶師が特別に作り上げた。 イヌの俊敏さと攻撃力を最大限に引き出すために設計された優れた爪。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0_%E9%8B%BC%E3%81%AE%E7%88%AA.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0_%E9%8B%BC%E3%81%AE%E7%88%AA.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_アイテム_鋼の爪.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 4f2c7f88-1703-4308-ac3e-e660ab4a02a5-46d7f50a-2b00-42f6-ac0f-2bb46e675954
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_ステータス_イヌ.txt
+        DocumentTitle | 桃太郎物語_ステータス_イヌ.txt
+        Content | 名前: イヌ クラス: 戦士 レベル: 8 経験値: 3500/8000 能力値: 力 (STR): 7/10 イヌの強力な噛みつきや力強い突進が特徴。 知恵 (INT): 5/10 戦闘においては直感力が優れ、桃太郎の指示を素早く理解する。 敏捷性 (DEX): 9/10 俊敏で機敏な動きで、敵の攻撃を素早くかわすことができる。 耐久力 (CON): 8/10 戦場での長時間の活動にも耐える丈夫な体を持つ。 魅力 (CHA): 6/10 村人たちとの交流ができ、困難な状況でも心強い存在。 武器: 鋼の爪: 強力な鋼製の爪で、素早い連続攻撃が可能。 防具:
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_ステータス_イヌ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 4f2c7f88-1703-4308-ac3e-e660ab4a02a5-4b6847f6-d57f-4f30-90e2-2be476d9d4a6
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_ステータス_イヌ.txt
+        DocumentTitle | 桃太郎物語_ステータス_イヌ.txt
+        Content | 魅力 (CHA): 6/10 村人たちとの交流ができ、困難な状況でも心強い存在。 武器: 鋼の爪: 強力な鋼製の爪で、素早い連続攻撃が可能。 防具: 皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場 でイヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。 皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場でイヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。 クエスト: 鬼の探索: 鬼の島において、敵の位置を察知し、桃太郎に情報を提供する。 バックストーリー: イヌは桃太郎の仲間として生まれ、戦士としての使命を果たすべく成長してきた。 幼いころから村の守り手として鍛えられ、桃太郎との出会いが運命を変えた。 忠誠心と戦闘力を備えたイヌは、仲間としての信頼を勝ち取り、冒険の中で数々の困難を共に乗り越えてきた。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_ステータス_イヌ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 4f2c7f88-1703-4308-ac3e-e660ab4a02a5-f53a619f-e100-4f72-a09b-74ed33c306c2
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_ステータス_イヌ.txt
+        DocumentTitle | 桃太郎物語_ステータス_イヌ.txt
+        Content | イヌの強力な噛みつきや力強い突進が特徴。 知恵 (INT): 5/10 戦闘においては直感力が優れ、桃太郎の指示を素早く理解する。 敏捷性 (DEX): 9/10 俊敏で機敏な動きで、敵の攻撃を素早くかわすことができる。 耐久力 (CON): 8/10 戦場での長時間の活動にも耐える丈夫な体を持つ。 魅力 (CHA): 6/10 村人たちとの交流ができ、困難な状況でも心強い存在。 武器: 鋼の爪: 強力な鋼製の爪で、素早い連続攻撃が可能。 防具: 皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場でイヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。 皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場でイ ヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。 クエスト: 鬼の探索: 鬼の島において、敵の位置を察知し、桃太郎に情報を提供する。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_ステータス_イヌ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 4f2c7f88-1703-4308-ac3e-e660ab4a02a5-7b769078-ce63-497f-81b8-494b17c165f5
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_ステータス_イヌ.txt
+        DocumentTitle | 桃太郎物語_ステータス_イヌ.txt
+        Content | 名前: イヌ クラス: 戦士 レベル: 8 経験値: 3500/8000 能力値: 力 (STR): 7/10 イヌの強力な噛みつきや力強い突進が特徴。 知恵 (INT): 5/10 戦闘においては直感力が優れ、桃太郎の指示を素早く理解する。 敏捷性 (DEX): 9/10 俊敏で機敏な動きで、敵の攻撃を素早くかわすことができる。 耐久力 (CON): 8/10 戦場での長時間の活動にも耐える丈夫な体を持つ。 魅力 (CHA): 6/10 村人たちとの交流ができ、困難な状況でも心強い存在。 武器: 鋼の爪: 強力な鋼製の爪で、素早い連続攻撃が可能。 防具: 皮の装備: 軽くて動きやすく、同時に一定の防御を提供する。 アビリティ: 咆哮: 戦場でイヌの威圧的な咆哮により、敵の動きを一時的に封じる。 忠誠心: 桃太郎に対する忠誠心が強く、彼の命令に絶対従う。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9_%E3%82%A4%E3%83%8C.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_ステータス_イヌ.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 4f2c7f88-1703-4308-ac3e-e660ab4a02a5-a552b808-231d-4471-bc28-f318b26d0e71
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第4章.txt
+        DocumentTitle | 桃太郎物語_第4章.txt
+        Content | 桃太郎は決意を胸に抱き、鬼との戦いに挑むために仲間を集める旅に出発した。 最初に向かったのは森の中で、そこで彼は信頼できる仲間たちを見つけることになる。 最初に出会ったのは、知恵者で忠実なイヌだった。 イヌは桃太郎の使命を知り、彼に仲間になることを申し出た。 彼は鼻っ柱を高く張り、忠誠心に満ちた瞳で桃太郎に誓いを立てた。 次に仲間に加わったのは、俊敏で器用なサルだった。 桃太郎がサルに会ったとき、彼は木の上で器用な動きを見せ、戦いにおいても役立つことを示した。 サルもまた、桃太郎の仲間になることを選び、冒険への期待が感じられた。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC4%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC4%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第4章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 4f2c7f88-1703-4308-ac3e-e660ab4a02a5-b087283d-2e57-45b8-b885-fd848fbc8ce4
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_第4章.txt
+        DocumentTitle | 桃太郎物語_第4章.txt
+        Content | 桃太郎は決意を胸に抱き、鬼との戦いに挑むために仲間を集める旅に出発した。 最初に向かったのは森の中で、そこで彼は信頼できる仲間たちを見つけることになる。 最初に出会ったのは、知恵者で忠実なイヌだった。 イヌは桃太郎の使命を知り、彼に仲間になることを申し出た。 彼は鼻っ柱を高く張り、忠誠心に満ちた瞳で桃太郎に誓いを立てた。 次に仲間に加わったのは、俊敏で器用なサルだった。 桃太郎がサルに会ったとき、彼は木の上で器用な動きを見せ、戦いにおいても役立つことを示した。 サルもまた、桃太郎の仲間になることを選び、冒険への期待が感じられた。 最後に加わったのは、美しい羽を持つキジだった。 桃太郎が彼女に出会った時、キジは空を舞い、その美しさで桃太郎を引き込んだ。 彼女もまた仲 間に加わり、桃太郎の冒険に彩りを添えることとなった。 仲間たちはそれぞれ異なる特技や個性を持ち、桃太郎の力強さを補完する存在となった。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC4%E7%AB%A0.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E7%AC%AC4%E7%AB%A0.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_第4章.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 4f2c7f88-1703-4308-ac3e-e660ab4a02a5-33ce234a-0e06-45a3-93c2-c6123e8767c5
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_アイテム_鋼の爪.txt
+        DocumentTitle | 桃太郎物語_アイテム_鋼の爪.txt
+        Content | 武器名: 鋼の爪 基本特性: 素材: 強力な鋼で作られており、爪の先端が鋭く尖っている。 軽量: イヌが素早い動きをするために軽量である。 能力値向上: 攻撃力向上: 鋼の爪の鋭い先端が相手に強力な傷を負わせる。 敏捷性向上: 軽量かつ鋭い形状が、イヌの俊敏な動きをサポート。 特殊効果: 切り裂き効果: 敵の防御を切り裂き、傷口からの出血を引き起こす。 イヌの威嚇: 鋼の爪で攻撃することで、敵に対して威嚇効果をもたらす。 属性: 無属性: 特定の属性に依存せず、 あらゆる種類の敵に対して有効。 野生の属性: 自然の力を帯びた爪であり、森や野生の中での効果が増す。 レアリティ:
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0_%E9%8B%BC%E3%81%AE%E7%88%AA.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0_%E9%8B%BC%E3%81%AE%E7%88%AA.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_アイテム_鋼の爪.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+        Id | 4f2c7f88-1703-4308-ac3e-e660ab4a02a5-808f0e49-fe5e-4e34-a448-702b8c71539c
+        DocumentId | s3://hogefuga-99999999-us-east-1/momo-taro/桃太郎物語_アイテム_鋼の爪.txt
+        DocumentTitle | 桃太郎物語_アイテム_鋼の爪.txt
+        Content | 武器名: 鋼の爪 基本特性: 素材: 強力な鋼で作られており、爪の先端が鋭く尖っている。 軽量: イヌが素早い動きをするために軽量である。 能力値向上: 攻撃力向上: 鋼の爪の鋭い先端が相手に強力な傷を負わせる。 敏捷性向上: 軽量かつ鋭い形状が、イヌの俊敏な動きをサポート。 特殊効果: 切り裂き効果: 敵の防御を切り裂き、傷口からの出血を引き起こす。 イヌの威嚇: 鋼の爪で攻撃することで、敵に対して威嚇効果をもたらす。 属性: 無属性: 特定の属性に依存せず、 あらゆる種類の敵に対して有効。 野生の属性: 自然の力を帯びた爪であり、森や野生の中での効果が増す。 レアリティ: 優れた: イヌのために特別に作られた優れた武器。 使用者への影響: イヌの戦闘本能: 鋼の爪を装備することで、イヌの戦闘本能がさらに引き出される。 バックストーリー: 村の守り手として生まれたイヌのために、鍛冶師が特別に作り上げた。 イヌの俊敏さと攻撃力を最大限に引き出すために設計された優れた爪。
+        DocumentURI | https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0_%E9%8B%BC%E3%81%AE%E7%88%AA.txt
+        DocumentAttributes | [{'Key': '_source_uri', 'Value': {'StringValue': 'https://hogefuga-99999999-us-east-1.s3.amazonaws.com/momo-taro/%E6%A1%83%E5%A4%AA%E9%83%8E%E7%89%A9%E8%AA%9E_%E3%82%A2%E3%82%A4%E3%83%86%E3%83%A0_%E9%8B%BC%E3%81%AE%E7%88%AA.txt'}}, {'Key': 's3_document_id', 'Value': {'StringValue': '桃太郎物語_アイテム_鋼の爪.txt'}}]
+        ScoreAttributes | {'ScoreConfidence': 'NOT_AVAILABLE'}
+2023-12-09 05:12:26.943074: --- Bedrock Start---
+2023-12-09 05:12:28.036046: --- Bedrock End---
+2023-12-09 05:12:28.036098: Bedrock Result : {'completion': ' 桃太郎物語_第1章_イヌの登場', 'stop_reason': 'stop_sequence', 'stop': '\n\nHuman'}
+
+{'completion': ' 桃太郎物語_第1章_イヌの登場', 'stop_reason': 'stop_sequence', 'stop': '\n\nHuman'}
+root@d36c793ddd0b:/work#
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+```python:rag-NotUseLangchein.py
+# Bedrock + Kendra を組み合わせる
+
+import boto3
+import json
+import datetime
+
+query = 'イヌ'  # クエリ
+indexId = '00000000-0000-0000-0000-000000000000'  # Kendra の "Index ID"
+modelId = "anthropic.claude-v2"  # BedrockのModel
+region_name = 'us-east-1'  # リージョンの指定
+
+# Kendraクライアントを作成
+kendra = boto3.client('kendra', region_name=region_name)
+
+# Boto3 セッションの作成
+session = boto3.Session()
+
+# Bedrock クライアントの作成
+bedrock_client = session.client(service_name='bedrock')
+bedrock_runtime_client = session.client(service_name='bedrock-runtime')
+
+def search_kendra(indexId, query):
+    kendra = boto3.client('kendra')
+
+    response = kendra.retrieve(
+        QueryText=query,
+        IndexId=indexId,
+        AttributeFilter={
+            "EqualsTo": {
+                "Key": "_language_code",
+                "Value": {"StringValue": "ja"},
+            },
+        },
+    )
+    
+    return response
+
+def generate_response(modelId, documents):
+    # モデルの同期的呼び出し（Anthropic Claude-v2 の場合）
+    #prompt = f"Human:『${documents}』の桃太郎物語_目次とあらすじ.txtファイルの２章の箇所は何行目から何行目ですか？\nAssistant:"
+    #prompt = f"Human:『${documents}』の2章の内容に合致するファイル名が 桃太郎物語_第 からはじまるファイルのファイル名を教えて\nAssistant:"
+    #prompt = f"Human:『${documents}』のイヌと最初にであったことが記載されている箇所は 桃太郎物語_目次とあらすじ.txtファイル の何行目から何行目ですか？\nAssistant:"
+    prompt = f"Human:『${documents}』のイヌと最初にであったことが記載されているファイル名が 桃太郎物語_第 からはじまるファイルのファイル名を教えて\nAssistant:"
+
+    body = json.dumps({
+        "prompt": prompt,
+        "max_tokens_to_sample": 300,
+        "temperature": 0.1,
+        "top_k": 1,
+        "stop_sequences": ["\n\nHuman"]
+    })
+    
+    accept = "application/json"
+    content_type = "application/json"
+    
+    response = bedrock_runtime_client.invoke_model(
+        body=body,
+        modelId=modelId,
+        accept=accept,
+        contentType=content_type
+    )
+    
+    response_body = json.loads(response.get('body').read())
+
+    return response_body
+
+
+def log(message):
+    # 現在の日時を取得
+    now = datetime.datetime.now()
+    # メッセージと日時を表示
+    print(f'{now}: {message}')
+
+## ------------------------------------------- ##
+
+
+def logKendraResult(documents):
+    #print(documents["ResultItems"][0])
+    #for key, value in documents["ResultItems"].items():
+    print("------")
+    for result in documents["ResultItems"]:
+        #print(f"====\t{key} | {value}")
+        #print(f"\tkey={key}, value={value}")
+        for key, value in result.items():
+            print(f"\t{key} | {value}")
+
+
+def rag(indexId, modelId, query):
+    log(f"query = {query}")
+    log(f"--- Kendra Start---")
+    documents = search_kendra(indexId, query)  # Kendraの処理
+    log(f"--- Kendra End---")
+    #log(f"Kendra Result : {documents}\n")
+    logKendraResult(documents)
+    
+    targetString = documents['ResultItems'][0]['Content']  # Kendraからの応答結果から一部抜き取る
+    log(f"--- Bedrock Start---")
+    response = generate_response(modelId, targetString)  # Kendra応答結果(抜粋版)をBedrockで処理する
+    log(f"--- Bedrock End---")
+    log(f"Bedrock Result : {response}\n")
+
+    return response
+
+response = rag(indexId, modelId, query)
+print(response)
+```
+
