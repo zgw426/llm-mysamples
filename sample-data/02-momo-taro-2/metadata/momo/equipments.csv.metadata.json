@@ -1,0 +1,8 @@
+{
+    "DocumentId": "document ID",
+    "Attributes": {
+        "category": "list"
+    },
+    "Title": "Equipment Information of the Character",
+    "ContentType": "CSV"
+}
